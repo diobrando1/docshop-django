@@ -25,7 +25,7 @@ class Profile(models.Model):
     birth_date = models.DateField(null=True, blank=True)
 
 @receiver(post_save, sender=User)
-def update_user_profile(sender, instance, created):
+def update_user_profile(sender, instance, created, **kwargs):
     """
     Updates user profile
     First, it checks if user is created, then creates Profile or not
