@@ -1,0 +1,2 @@
+# docshop-django
+python project
