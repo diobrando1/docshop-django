@@ -46,6 +46,7 @@ class ContentTypeRestrictedFileField(FileField):
         super(ContentTypeRestrictedFileField, self).__init__(*args, **kwargs)
 
     def clean(self, *args, **kwargs):
+        """Clean method"""
         data = super(ContentTypeRestrictedFileField, self).clean(*args, **kwargs)
 
         file = data.file
