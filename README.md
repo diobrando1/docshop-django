@@ -1,7 +1,7 @@
 # docshop-django
 python project
 
-(1) Testy w /tests/test_type.py
+(1) Testy w /docshop/tests/test_type.py
 
 (2) Pylint
 > pylint --load-plugins=pylint_django pdfshop/*.py
